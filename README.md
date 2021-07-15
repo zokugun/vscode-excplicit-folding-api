@@ -1,4 +1,4 @@
-[@zokugun/vscode.excplicit-folding-api](https://github.com/zokugun/vscode-excplicit-folding-api)
+[@zokugun/vscode.explicit-folding-api](https://github.com/zokugun/vscode-explicit-folding-api)
 ======================================================================
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)

@@ -1,14 +1,14 @@
 {
-	"name": "@zokugun/vscode.excplicit-folding-api",
+	"name": "@zokugun/vscode.explicit-folding-api",
 	"description": "API to register rules to the Explicit-Folding extension",
 	"version": "0.1.0",
-	"homepage": "https://github.com/zokugun/vscode-excplicit-folding-api",
+	"homepage": "https://github.com/zokugun/vscode-explicit-folding-api",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zokugun/vscode-excplicit-folding-api.git"
+		"url": "https://github.com/zokugun/vscode-explicit-folding-api.git"
 	},
 	"bugs": {
-		"url": "https://github.com/zokugun/vscode-excplicit-folding-api/issues"
+		"url": "https://github.com/zokugun/vscode-explicit-folding-api/issues"
 	},
 	"author": {
 		"name": "Baptiste Augrain",
