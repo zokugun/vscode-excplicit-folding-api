@@ -5,29 +5,42 @@ export interface ExplicitFoldingHub {
 	unregisterFoldingRules(language: string): void;
 }
 
-export type ExplicitFoldingConfig = {
-	begin?: string,
-	middle?: string,
-	end?: string,
-	continuation?: string,
-	beginRegex?: string,
-	middleRegex?: string,
-	endRegex?: string,
-	continuationRegex?: string,
-	separator?: string,
-	separatorRegex?: string,
-	while?: string,
-	whileRegex?: string,
-	indentation?: boolean,
+export interface ExplicitFoldingConfig {
+	begin?: string;
+	middle?: string;
+	end?: string;
+	beginRegex?: string;
+	middleRegex?: string;
+	endRegex?: string;
+	continuation?: string;
+	continuationRegex?: string;
+	separator?: string;
+	separatorRegex?: string;
+	while?: string;
+	whileRegex?: string;
+
+	// common options
+	bypassProtection?: boolean;
+	kind?: 'comment' | 'region';
+
+	// autofold options
+	autoFold?: boolean;
+
+	// begin/end options
+	consumeEnd?: boolean | boolean[];
+	name?: string;
+
+	// folding options
+	foldBOF?: boolean;
+	foldEOF?: boolean;
+	foldLastLine?: boolean | boolean[];
+
+	// nested options
+	descendants?: ExplicitFoldingConfig[];
+	nested?: boolean | ExplicitFoldingConfig[];
+	strict?: boolean | string;
+
+	// indentation rule
+	indentation?: boolean;
 	offSide?: boolean;
-	consumeEnd?: boolean | boolean[],
-	foldLastLine?: boolean | boolean[],
-	foldBOF?: boolean,
-	foldEOF?: boolean,
-	nested?: boolean | ExplicitFoldingConfig[],
-	descendants?: ExplicitFoldingConfig[],
-	strict?: boolean | string,
-	name?: string,
-	kind?: 'comment' | 'region',
-	autoFold?: boolean
 };

@@ -25,6 +25,7 @@
 		"typescript": "^4.2.4"
 	},
 	"scripts": {
+		"prepare": "npm run compile",
 		"compile": "tsc -p ./"
 	},
 	"keywords": [
