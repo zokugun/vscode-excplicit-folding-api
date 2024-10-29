@@ -43,4 +43,7 @@ export interface ExplicitFoldingConfig {
 	// indentation rule
 	indentation?: boolean;
 	offSide?: boolean;
+
+	// include rule
+	include?: string | string[];
 };
