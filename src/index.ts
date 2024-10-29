@@ -33,6 +33,7 @@ export interface ExplicitFoldingConfig {
 	// folding options
 	foldBOF?: boolean;
 	foldEOF?: boolean;
+	foldBeforeFirstLine?: boolean;
 	foldLastLine?: boolean | boolean[];
 
 	// nested options
